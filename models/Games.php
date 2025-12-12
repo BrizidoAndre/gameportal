@@ -36,7 +36,7 @@ class Games extends \yii\db\ActiveRecord
             [['date', 'number_pieces', 'imageFile'], 'required'],
             [['date'], 'safe'],
             [['date'], 'unique'],
-            ['imageFile', 'image', 'width' => '1024', 'height' => '1024'],
+            ['imageFile', 'image', ],
             [['number_pieces'], 'integer'],
             [['image_path'], 'string', 'max' => 255],
         ];
